@@ -20,7 +20,7 @@
 }
 
 #omikuji > #output > p {
-  font-size: 15px;
+  font-size: 70px;
   font-family: serif;
   margin: 0;
 }
@@ -37,7 +37,7 @@
   border: 0;
   color: #FFF;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 70px;
   font-family: serif;
   margin: 10px auto 20px auto;
   padding: 5px 20px;
@@ -50,4 +50,12 @@
 
 #omikuji > #btn:active {
   background: #F10;
+}
+
+.button-outline {
+  background-color: #0a5d8a;
+  width: 200px;
+  height: 100px;
+  color: #FFFFFF;
+  font-size: 70px;  
 }
