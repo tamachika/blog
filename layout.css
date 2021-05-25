@@ -1,45 +1,5 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
-  
-}
-
-
-
-@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
-
-}
-
-
-@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
-    main {
-    width: 100%;
-  }
-  * {
-  float: none;
-  position: static;
-  }
-   
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-  table {
-  width: 100%;
-  border-collapse: collapse;
-  }
-   
-  th,td {
-    border: solid 1px;
-    padding: 10px;
-  }
-
-  .table_wrap {
-    width: 100%;
-    overflow-x: scroll;
-  }
-
-}
 
 
 #omikuji {
@@ -104,3 +64,44 @@
   .output{
     font-size: 100px;
   }
+
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+  
+}
+
+
+
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+
+}
+
+
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    main {
+    width: 100%;
+  }
+  * {
+  float: none;
+  position: static;
+  }
+   
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+   
+  th,td {
+    border: solid 1px;
+    padding: 10px;
+  }
+
+  .table_wrap {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+}
