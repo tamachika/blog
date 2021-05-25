@@ -1,65 +1,108 @@
 @charset "UTF-8";
 
-#omikuji {
-  text-align: center;
-  width: 590px;
-  background-color: #EDA;
-  border: 3px double #990;
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+  #omikuji {
+    text-align: center;
+    width: 590px;
+    background-color: #EDA;
+    border: 3px double #990;
+  }
+
+  #omikuji > h1 {
+    color: #630;
+    font-family: serif;
+  }
+
+  #omikuji > #output > h2 {
+    font-size: 70px;
+    font-family: serif;
+    margin: 0;
+    text-shadow: 0 -1px 0 #222;
+  }
+
+  #omikuji > #output > p {
+    font-size: 70px;
+    font-family: serif;
+    margin: 0;
+  }
+
+  #omikuji > #output {
+    background-color: #000;
+    color: #FFF;
+    margin: 10px auto;
+    padding: 5px;
+  }
+
+  #omikuji > #btn {
+    background: #110;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 70px;
+    font-family: serif;
+    margin: 10px auto 20px auto;
+    padding: 5px 20px;
+  }
+
+  #omikuji > #btn:hover {
+    background: #C00;
+  }
+
+  #omikuji > #btn:active {
+    background: #F10;
+  }
+
+  .button-outline {
+    background-color: #0a5d8a;
+    width: 1000px;
+    height: 1000px;
+    color: #FFFFFF;
+    font-size: 70px;  
+  }
+
+  .output{
+    font-size: 100px;
+  }
 }
 
-#omikuji > h1 {
-  color: #630;
-  font-family: serif;
-}
 
-#omikuji > #output > h2 {
-  font-size: 70px;
-  font-family: serif;
-  margin: 0;
-  text-shadow: 0 -1px 0 #222;
-}
 
-#omikuji > #output > p {
-  font-size: 70px;
-  font-family: serif;
-  margin: 0;
-}
+@media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
 
-#omikuji > #output {
-  background-color: #000;
-  color: #FFF;
-  margin: 10px auto;
-  padding: 5px;
-}
-
-#omikuji > #btn {
-  background: #110;
-  border: 0;
-  color: #FFF;
-  cursor: pointer;
-  font-size: 70px;
-  font-family: serif;
-  margin: 10px auto 20px auto;
-  padding: 5px 20px;
-}
-
-#omikuji > #btn:hover {
-  background: #C00;
-}
-
-#omikuji > #btn:active {
-  background: #F10;
-}
-
-.button-outline {
-  background-color: #0a5d8a;
-  width: 1000px;
-  height: 1000px;
-  color: #FFFFFF;
-  font-size: 70px;  
 }
 
 
-.output{
-  font-size: 100px;
+@media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+    main {
+    width: 100%;
+  }
+  * {
+  float: none;
+  position: static;
+  }
+   
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  table {
+  width: 100%;
+  border-collapse: collapse;
+  }
+   
+  th,td {
+    border: solid 1px;
+    padding: 10px;
+  }
+   
+  @media screen and (max-width:480px) {
+    table {
+      min-width: 500px;
+    }
+    .table_wrap {
+      width: 100%;
+      overflow-x: scroll;
+    }
+  }
+
 }
