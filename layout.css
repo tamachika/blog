@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 
-
-#omikuji {
+@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+  #omikuji {
     text-align: center;
     width: 590px;
     background-color: #EDA;
@@ -64,8 +64,6 @@
   .output{
     font-size: 100px;
   }
-
-@media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
   
 }
 
@@ -77,16 +75,67 @@
 
 
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
-   
-  * {
-  float: none;
-  position: static;
+  #omikuji {
+    text-align: center;
+    width: 190px;
+    background-color: #EDA;
+    border: 3px double #990;
   }
-   
-  img {
-    max-width: 100%;
-    height: auto;
-    width: auto;
+
+  #omikuji > h1 {
+    color: #630;
+    font-family: serif;
+  }
+
+  #omikuji > #output > h2 {
+    font-size: 50px;
+    font-family: serif;
+    margin: 0;
+    text-shadow: 0 -1px 0 #222;
+  }
+
+  #omikuji > #output > p {
+    font-size: 70px;
+    font-family: serif;
+    margin: 0;
+  }
+
+  #omikuji > #output {
+    background-color: #000;
+    color: #FFF;
+    margin: 10px auto;
+    padding: 5px;
+  }
+
+  #omikuji > #btn {
+    background: #110;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: serif;
+    margin: 10px auto 20px auto;
+    padding: 5px 20px;
+  }
+
+  #omikuji > #btn:hover {
+    background: #C00;
+  }
+
+  #omikuji > #btn:active {
+    background: #F10;
+  }
+
+  .button-outline {
+    background-color: #0a5d8a;
+    width: 300px;
+    height: 400px;
+    color: #FFFFFF;
+    font-size: 50px;  
+  }
+
+  .output{
+    font-size: 50px;
   }
 /*
   table {
