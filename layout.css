@@ -2,6 +2,103 @@
 
 
 @media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
+
+    body > #container > * {
+    max-width: 1160px;
+    margin: 0 auto;
+  }
+
+
+  #headimg img,
+  main img {
+    width: 100%;
+  }
+
+  /* �摜�̉��̓�̗]���Ή� */
+  /* #headimg img {
+    vertical-align: bottom;
+  }*/
+  #headimg img {
+    display: block;
+  }
+
+  /* clearfix */
+  .clearfix:after {
+    clear: both;
+    content: '';
+    display: block;
+  }
+
+
+  /* ���j���[ */
+  ul.gmenu {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+  }
+
+  ul.gmenu > li {
+    display: inline-block;
+    padding: 5px;
+    font-weight: bold;
+  }
+  ul.gmenu > li a {
+    color: #ffffff;
+  }
+
+  /* �T�u���j���[ */
+  ul.gmenu ul {
+    display: none;
+  }
+
+  ul.gmenu > li:hover ul {
+    display: block;
+    height: auto;
+    position: absolute;
+    background-color: #000000;
+    padding: 5px;
+    margin-left: -5px;
+  }
+  ul.gmenu ul > li {
+    display: block;
+    padding: 5px;
+  }
+
+  ul.gmenu li:hover {
+    background-color: #666666;
+  }
+
+  /* �t�b�^�[���j���[ ��ɊJ�� */
+  #footerrnav ul.gmenu > li {
+    position: relative;
+  }
+  #footerrnav ul.gmenu > li:hover ul {
+    bottom: 34px;
+    white-space: nowrap;
+  }
+
+
+  /* ���C���R���e���c */
+  #inner-content {
+    margin-top: 20px;
+  }
+  main {
+    width: 800px;
+    margin-right: 24px;
+    float: left;
+  }
+
+  main h1 {
+    margin-top: 0;
+  }
+
+  /* �T�C�h�o�[ */
+  #sidebar {
+    width: 336px;
+    float: right;
+  }
+
+
   #omikuji {
     text-align: center;
     width: 590px;
@@ -64,13 +161,61 @@
   .output{
     font-size: 100px;
   }
-  
 }
 
 
-
 @media screen and (max-width: 767px) { /*ウィンドウ幅が最大767pxまでの場合に適用*/
+  #omikuji {
+    text-align: center;
+    width: 400px;
+    background-color: #EDA;
+    border: 3px double #990;
+  }
 
+
+  #omikuji > #output > p {
+    font-size: 70px;
+    font-family: serif;
+    margin: 0;
+  }
+
+  #omikuji > #output {
+    background-color: #000;
+    color: #FFF;
+    margin: 10px auto;
+    padding: 5px;
+  }
+
+  #omikuji > #btn {
+    background: #110;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 50px;
+    font-family: serif;
+    margin: 10px auto 20px auto;
+    padding: 5px 20px;
+  }
+
+  #omikuji > #btn:hover {
+    background: #C00;
+  }
+
+  #omikuji > #btn:active {
+    background: #F10;
+  }
+
+  .button-outline {
+    background-color: #0a5d8a;
+    width: 300px;
+    height: 400px;
+    color: #FFFFFF;
+    font-size: 50px;
+  }
+
+  .output{
+    font-size: 50px;
+  }
 }
 
 
@@ -120,13 +265,13 @@
     width: 300px;
     height: 400px;
     color: #FFFFFF;
-    font-size: 50px;  
+    font-size: 50px;
   }
 
   .output{
     font-size: 50px;
   }
-/*
+  /*
   table {
   width: 100%;
   border-collapse: collapse;
@@ -142,5 +287,4 @@
     overflow-x: scroll;
   }
   */
-
 }
