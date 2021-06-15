@@ -1,166 +1,173 @@
 @charset "UTF-8";
 
+.sidebar{
+  float: left;
+}
+
+
+body{
+    background-color: #FAF0E6;
+}
+
 
 @media screen and (min-width: 767px) { /*ウィンドウ幅が767px以上の場合に適用*/
 
     body > #container > * {
     max-width: 1160px;
     margin: 0 auto;
-  }
+    }
+
+    #headimg img,
+    main img {
+      width: 100%;
+    }
+
+    /* #headimg img {
+      vertical-align: bottom;
+    }*/
+    #headimg img {
+      display: block;
+    }
+
+    /* clearfix */
+    .clearfix:after {
+      clear: both;
+      content: '';
+      display: block;
+    }
 
 
-  #headimg img,
-  main img {
-    width: 100%;
-  }
+    /* ���j���[ */
+    ul.gmenu {
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+    }
 
-  /* �摜�̉��̓�̗]���Ή� */
-  /* #headimg img {
-    vertical-align: bottom;
-  }*/
-  #headimg img {
-    display: block;
-  }
+    ul.gmenu > li {
+      display: inline-block;
+      padding: 5px;
+      font-weight: bold;
+    }
+    ul.gmenu > li a {
+      color: #ffffff;
+    }
 
-  /* clearfix */
-  .clearfix:after {
-    clear: both;
-    content: '';
-    display: block;
-  }
+    /* �T�u���j���[ */
+    ul.gmenu ul {
+      display: none;
+    }
 
+    ul.gmenu > li:hover ul {
+      display: block;
+      height: auto;
+      position: absolute;
+      background-color: #000000;
+      padding: 5px;
+      margin-left: -5px;
+    }
+    ul.gmenu ul > li {
+      display: block;
+      padding: 5px;
+    }
 
-  /* ���j���[ */
-  ul.gmenu {
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-  }
+    ul.gmenu li:hover {
+      background-color: #666666;
+    }
 
-  ul.gmenu > li {
-    display: inline-block;
-    padding: 5px;
-    font-weight: bold;
-  }
-  ul.gmenu > li a {
-    color: #ffffff;
-  }
-
-  /* �T�u���j���[ */
-  ul.gmenu ul {
-    display: none;
-  }
-
-  ul.gmenu > li:hover ul {
-    display: block;
-    height: auto;
-    position: absolute;
-    background-color: #000000;
-    padding: 5px;
-    margin-left: -5px;
-  }
-  ul.gmenu ul > li {
-    display: block;
-    padding: 5px;
-  }
-
-  ul.gmenu li:hover {
-    background-color: #666666;
-  }
-
-  /* �t�b�^�[���j���[ ��ɊJ�� */
-  #footerrnav ul.gmenu > li {
-    position: relative;
-  }
-  #footerrnav ul.gmenu > li:hover ul {
-    bottom: 34px;
-    white-space: nowrap;
-  }
+    /* �t�b�^�[���j���[ ��ɊJ�� */
+    #footerrnav ul.gmenu > li {
+      position: relative;
+    }
+    #footerrnav ul.gmenu > li:hover ul {
+      bottom: 34px;
+      white-space: nowrap;
+    }
 
 
-  /* ���C���R���e���c */
-  #inner-content {
-    margin-top: 20px;
-  }
-  main {
-    width: 800px;
-    margin-right: 24px;
-    float: left;
-  }
+    /* ���C���R���e���c */
+    #inner-content {
+      margin-top: 20px;
+    }
+    main {
+      width: 800px;
+      margin-right: 24px;
+      float: left;
+    }
 
-  main h1 {
-    margin-top: 0;
-  }
+    main h1 {
+      margin-top: 0;
+    }
 
-  /* �T�C�h�o�[ */
-  #sidebar {
-    width: 336px;
-    float: right;
-  }
+    /* �T�C�h�o�[ */
+    #sidebar {
+      width: 336px;
+      float: right;
+    }
 
 
-  #omikuji {
-    text-align: center;
-    width: 590px;
-    background-color: #EDA;
-    border: 3px double #990;
-  }
+    #omikuji {
+      text-align: center;
+      width: 590px;
+      background-color: #EDA;
+      border: 3px double #990;
+    }
 
-  #omikuji > h1 {
-    color: #630;
-    font-family: serif;
-  }
+    #omikuji > h1 {
+      color: #630;
+      font-family: serif;
+    }
 
-  #omikuji > #output > h2 {
-    font-size: 70px;
-    font-family: serif;
-    margin: 0;
-    text-shadow: 0 -1px 0 #222;
-  }
+    #omikuji > #output > h2 {
+      font-size: 70px;
+      font-family: serif;
+      margin: 0;
+      text-shadow: 0 -1px 0 #222;
+    }
 
-  #omikuji > #output > p {
-    font-size: 70px;
-    font-family: serif;
-    margin: 0;
-  }
+    #omikuji > #output > p {
+      font-size: 70px;
+      font-family: serif;
+      margin: 0;
+    }
 
-  #omikuji > #output {
-    background-color: #000;
-    color: #FFF;
-    margin: 10px auto;
-    padding: 5px;
-  }
+    #omikuji > #output {
+      background-color: #000;
+      color: #FFF;
+      margin: 10px auto;
+      padding: 5px;
+    }
 
-  #omikuji > #btn {
-    background: #110;
-    border: 0;
-    color: #FFF;
-    cursor: pointer;
-    font-size: 70px;
-    font-family: serif;
-    margin: 10px auto 20px auto;
-    padding: 5px 20px;
-  }
+    #omikuji > #btn {
+      background: #110;
+      border: 0;
+      color: #FFF;
+      cursor: pointer;
+      font-size: 70px;
+      font-family: serif;
+      margin: 10px auto 20px auto;
+      padding: 5px 20px;
+    }
 
-  #omikuji > #btn:hover {
-    background: #C00;
-  }
+    #omikuji > #btn:hover {
+      background: #C00;
+    }
 
-  #omikuji > #btn:active {
-    background: #F10;
-  }
+    #omikuji > #btn:active {
+      background: #F10;
+    }
 
-  .button-outline {
-    background-color: #0a5d8a;
-    width: 1000px;
-    height: 1000px;
-    color: #FFFFFF;
-    font-size: 70px;  
-  }
+    .button-outline {
+      background-color: #0a5d8a;
+      width: 1000px;
+      height: 1000px;
+      color: #FFFFFF;
+      font-size: 70px;  
+    }
 
-  .output{
-    font-size: 100px;
-  }
+    .output{
+      font-size: 100px;
+    }
 }
 
 
@@ -222,7 +229,7 @@
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
   #omikuji {
     text-align: center;
-    width: 190px;
+    width: 60%;
     background-color: #EDA;
     border: 3px double #990;
   }
