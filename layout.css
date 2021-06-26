@@ -273,6 +273,11 @@ body{
   .output{
     font-size: 50px;
   }
+    
+    
+  .sidebar{
+    font-size: 40px;
+  }
   /*
   table {
   width: 100%;
