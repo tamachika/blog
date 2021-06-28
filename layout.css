@@ -222,6 +222,11 @@ body{
 
 
 @media screen and (max-width: 479px) { /*ウィンドウ幅が最大479pxまでの場合に適用*/
+  #sidebar{
+    font-size: 30px;
+  }
+
+
   #omikuji {
     text-align: center;
     width: 60%;
@@ -273,11 +278,7 @@ body{
   .output{
     font-size: 50px;
   }
-    
-    
-  .sidebar{
-    font-size: 40px;
-  }
+
   /*
   table {
   width: 100%;
