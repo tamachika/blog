@@ -1,3 +1,12 @@
+fetch("./header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+
+
 window.onload = function(){
 
 var luck = ["鶏肉","豚肉","牛肉","白身魚","赤身魚", "青魚"];
