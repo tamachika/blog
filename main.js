@@ -1,9 +1,9 @@
-fetch("./sidebar.html")
+fetch("./side.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector("sidebar").innerHTML = data;
+    document.querySelector("side").innerHTML = data;
   });
 
 fetch("./header.html")
