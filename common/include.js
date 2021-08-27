@@ -17,7 +17,7 @@ fetch("../sidebar.html")
   });
 
 
-fetch("footer.html")
+fetch("/blog/common/footer.html")
   .then(response => {
     return response.text()
   })
