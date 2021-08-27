@@ -3,7 +3,7 @@ fetch("common/footer.html")
     return response.text()
   })
   .then(data => {
-    document.querySelector("footer").innerHTML = data;
+    document.querySelector("common/footer").innerHTML = data;
   });
 
 
