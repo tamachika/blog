@@ -8,7 +8,7 @@ fetch("./common/header.html")
 
 
 
-fetch("common/sidebar.html")
+fetch("blog/common/sidebar.html")
   .then(response => {
     return response.text()
   })
