@@ -1,3 +1,11 @@
+fetch("common/header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+
 
 
 fetch("common/sidebar.html")
