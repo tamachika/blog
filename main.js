@@ -1,6 +1,4 @@
-
-
-fetch("./common/footer.html")
+fetch("common/footer.html")
   .then(response => {
     return response.text()
   })
