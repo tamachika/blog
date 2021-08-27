@@ -10,7 +10,7 @@ fetch("header.html")
 
 fetch("sidebar.html")
   .then(response => {
-    return response.text()
+    return response.text(sidebar)
   })
   .then(data => {
     document.querySelector("sidebar").innerHTML = data;
@@ -19,7 +19,7 @@ fetch("sidebar.html")
 
 fetch("footer.html")
   .then(response => {
-    return response.text()
+    return response.text("footer")
   })
   .then(data => {
     document.querySelector("footer").innerHTML = data;
