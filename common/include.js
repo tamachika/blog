@@ -8,9 +8,9 @@ fetch("header.html")
 
 
 
-fetch("sidebar.html")
+fetch("./common/sidebar.html")
   .then(response => {
-    return response.text(succes)
+    return response.text()
   })
   .then(data => {
     document.querySelector("sidebar").innerHTML = data;
@@ -19,7 +19,7 @@ fetch("sidebar.html")
 
 fetch("footer.html")
   .then(response => {
-    return response.text("footer.html")
+    return response.text("")
   })
   .then(data => {
     document.querySelector("footer").innerHTML = data;
