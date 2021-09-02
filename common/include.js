@@ -13,7 +13,7 @@ fetch("./common/sidebar.html")
     return response.text()
   })
   .then(data => {
-    document.querySelector("sidebar").innerHTML = data;
+    document.querySelector("sidebar").innerHTML = "./common/sidebar.html";
   });
 
 
