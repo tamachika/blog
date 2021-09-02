@@ -3,7 +3,7 @@ fetch("../header.html")
     return response.text()
   })
   .then(data => {
-    document.querySelector("header").innerHTML = data;
+    document.querySelector("header").innerHTML = "header.html";
   });
 
 
