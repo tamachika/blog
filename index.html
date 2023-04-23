@@ -6,7 +6,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>面白い人</title>
+    <title>文字数自動でカウントしてくれるやつ＆おまけ（面白い人</title>
+
+    <style>
+        /* オプション: コードスタイルをカスタマイズ */
+        pre {
+          background-color: #f8f8f8;
+          padding: 10px;
+          border-radius: 5px;
+        }
+        code {
+          font-family: 'Courier New', Courier, monospace;
+          font-size: 1em;
+        }
+    </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="layout.css">
@@ -30,6 +43,41 @@
           
           <main id="main">
             <article>
+                <h1>文字数をカウントしてくるやつ</h1>
+                
+                <pre><code>
+                    javascript:(function() {
+                        const counterDiv = document.createElement("div");
+                        counterDiv.id = "selected-text-counter";
+                        counterDiv.style.cssText = "position: fixed; top: 10px; right: 10px; padding: 8px 12px; background: #333; color: white; font-size: 14px; z-index: 9999";
+                        document.body.appendChild(counterDiv);
+                      
+                        const updateCounter = () => {
+                          const selectedText = window.getSelection().toString();
+                          const textLength = selectedText.length;
+                          counterDiv.textContent = `選択した文字列の文字数: ${textLength}`;
+                        };
+                      
+                        document.addEventListener("mouseup", updateCounter);
+                        document.addEventListener("keydown", updateCounter);
+                      })();                      
+                </code></pre>
+                
+                <p>
+                1 お気に入りバーを表示
+                2 お気に入りバーに新しいブックマークを追加
+                3 名前に任意の名前（例えば、「文字数カウンター」）を入力し、URLに上記のJavaScriptコードを貼り付ける
+                4 保存
+
+                このブックマークレットを使用するには、既存のウェブサイトを開いてから、作成したブックマークレットをクリック。
+                これにより、選択した文字列の文字数が画面上に表示できます。
+                </p>
+
+                
+
+
+
+
               <h1>面白い人の紹介</h1>
 
               <h2>間宮林蔵</h2>
